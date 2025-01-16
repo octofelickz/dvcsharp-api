@@ -18,7 +18,7 @@ jobs:
           owner: ${{ github.repository_owner }}
           repositories: ${{ github.event.repository.name }} # or remove this line to generate toke to all repos in org
       - name: Generate GHAS Metrics Report
-        uses: felickz/ghas-metrics-report@main
+        uses: felickz/ghas-metrics-report@report-updates
         env:
           GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         with:
